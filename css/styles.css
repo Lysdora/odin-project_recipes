@@ -1,0 +1,129 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+:root {
+    --color-black333: #333333;
+    --color-green: #778C79;
+    --color-text: #676767;
+    --color-brown: #B25B4F;
+
+}
+/* Base styles */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
+    color: var(--color-black333);
+    background-color: #F2F2F2;
+    line-height: 1.5;
+    font-weight: 500;
+
+}
+
+.wrapper {
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    
+}
+
+a {
+    text-decoration: none;
+    color: inherit; 
+    font-size: 1rem;
+}
+
+img {
+    max-width: 100%;
+    display: inline-block;
+}
+
+/* Header */
+nav {
+    padding: 1.2rem 0 4rem 0;       
+}
+
+.header-nav {  
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    gap: 0.5rem;  
+}
+
+.logo {
+    align-self: flex-end;
+    margin-right: auto;
+    /* flex-basis: 100%; */
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    justify-content: center;     
+  
+}
+
+h1 {
+    display: inline-block;
+    margin: 0;
+    font-size: 1rem;
+}
+
+/* Hero section */
+
+.hero {
+    text-align: center;
+}
+
+.hero-text h3 {
+    color: var(--color-green);
+   
+    font-size: 1.125rem;
+   margin-bottom: 0.4rem;
+}
+
+.hero-text h2 {
+    font-weight: 700;
+    line-height: 1.1;
+    margin: 0;
+    display: inline-block;
+    border-bottom: 4px solid #EBE1CE;   
+    padding-bottom: 0.3rem;
+}
+
+.hero-text p {
+    margin-bottom: 3rem;
+}
+
+.btn {
+    background-color: var(--color-brown);
+    color: #fff;
+    padding: 16px 30px;
+    border-radius: 30px;
+}
+
+/* Media Queries Tablet */
+@media screen and (min-width: 768px) {
+   .wrapper {
+    width: 60rem;
+    
+    
+   }
+   .hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+  
+    padding: 2rem;
+    align-items: flex-start;
+    overflow: hidden;
+   }
+}
