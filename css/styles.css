@@ -81,6 +81,7 @@ h1 {
 
 .hero {
     text-align: center;
+ padding: 1.5rem 0;
 }
 
 .hero-text h3 {
@@ -108,22 +109,62 @@ h1 {
     color: #fff;
     padding: 16px 30px;
     border-radius: 30px;
+    display: inline-block;
 }
 
 /* Media Queries Tablet */
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 950px) {
+    /* base style */
    .wrapper {
-    width: 60rem;
-    
+    width: 60rem;   
+   }
+   section {
+    margin-top: 4rem;
+   }
+   /* Header Navbar */
+   .header-nav {
+    gap: 2rem;
     
    }
+   .header-nav a {
+    font-size: 1.2rem;
+   }
+   .header-nav h1 {
+    font-size: 1.7rem;
+   }
+
+   /* Hero section */
    .hero {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 3rem;
+   
   
-    padding: 2rem;
+    
     align-items: flex-start;
-    overflow: hidden;
+  
    }
+
+   .hero-img{
+    grid-column: 2 /-1;
+   
+   }
+
+   .hero-text {
+    grid-row: 1;
+    text-align: left;
+   }
+   .hero-text h3 {
+    color: var(--color-green);
+    font-size: 2.25rem;
+    margin-top: 0;
+   }
+   .hero-text h2 {
+    font-size: 5rem;
+   }
+   .hero-text p , .btn{
+    font-size: 1.25rem;
+   }
+
+   
 }
